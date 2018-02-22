@@ -24,6 +24,7 @@
 #include "log.h"
 //#include "ppm.h"
 #include "fonts.h"
+#include "time.h"
 
 //defined types
 typedef double Flt;
@@ -973,6 +974,7 @@ void render()
 	r.bot = g.yres - 20;
 	r.left = 10;
 	r.center = 0;
+	
 	ggprint8b(&r, 16, c, "B - Bigfoot");
 	ggprint8b(&r, 16, c, "F - Forest");
 	ggprint8b(&r, 16, c, "S - Silhouette");
@@ -981,5 +983,6 @@ void render()
 	ggprint8b(&r, 16, c, "R - Rain");
 	ggprint8b(&r, 16, c, "D - Deflection");
 	ggprint8b(&r, 16, c, "N - Sounds");
+	ggprint8b(&r, 16, c, "Timer : %i", t.inc_time());
 }
 
