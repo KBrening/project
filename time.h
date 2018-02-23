@@ -1,6 +1,5 @@
-
 //counts the time of the program running
-
+//Made by Keelan Brening
 class Timer{
     public:
 	int x;
@@ -12,4 +11,3 @@ class Timer{
 		return x++;
 	}
 }t;
-
